@@ -9,37 +9,37 @@ module.exports = {
         } )
 
         gateway.save((err, data) => {
-            if(err) res.json({error: err})
+            if(err)return res.json({error: err})
             res.json(data)
         })
     },
     find: (req, res) => {
         Gateway.find((err, data) => {
-            if(err) res.json({error: err})
+            if(err)return res.json({error: err})
             res.json(data)
         })
     },
     findByGatewayId: (req, res) => {
         Gateway.findById(req.params.id, (err, gateway) => {
-            if(err)res.json({error: err})
+            if(err)return res.json({error: err})
             res.json(gateway)
         })
     },
     remove: (req, res) => {
         Gateway.findById(req.params.id, (err, gateway) => {
             if(err){
-                res.json({error: err})
+                return res.json({error: err})
             }else if(!gateway){
-                res.json({error: "Not found peripheral"})
+                return res.json({error: "Not found peripheral"})
             }
             
             const gatewayId = gateway._id
             
             gateway.remove((err) => {
-                if(err) res.json({error: err})
+                if(err)return res.json({error: err})
 
                 Peripheral.deleteMany({gateway: gatewayId}, err => {
-                    if(err) res.json({error: err})
+                    if(err)return res.json({error: err})
 
                     res.json(gateway)
                 })
