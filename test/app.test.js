@@ -19,17 +19,6 @@ describe("Testing enpoints", () => {
             })
     })
 
-    it('Get Gateways', done => {
-        chai
-            .request(app)
-            .get('/api/gateways')
-            .end((err, res) => {
-                expect(res).to.have.status(200)
-                expect(res.body).to.be.a("array")
-                done()
-            })
-    })
-
     it('Return error for invalid ip to Gateway', done => {
         chai
             .request(app)
@@ -38,6 +27,18 @@ describe("Testing enpoints", () => {
             .end((err, res) => {
                 expect(res).to.have.status(200)
                 expect(res.body.error.message).to.equals("Gateway validation failed: ip: Gateway ip need to be a valid ipv4 adreess")
+                done()
+            })
+    })
+
+    it('Get Gateways at least the test inserted one and skip the one that not pass validation', done => {
+        chai
+            .request(app)
+            .get('/api/gateways')
+            .end((err, res) => {
+                expect(res).to.have.status(200)
+                expect(res.body).to.be.a("array")
+                expect(res.body).to.have.lengthOf.at.least(1)
                 done()
             })
     })
