@@ -24,9 +24,15 @@ module.exports = {
         })
     }, 
     find: (req, res) => {
-        Peripheral.find((err, data) => {
-            if(err) res.json({error: err})
-            res.json(data)
+        Peripheral.find((err, peripherals) => {
+            if(err)res.json({error: err})
+            res.json(peripherals)
+        })
+    },
+    findByPeripheralId: (req, res) => {
+        Peripheral.findById(req.params.id, (err, peripheral) => {
+            if(err)res.json({error: err})
+            res.json(peripheral)
         })
     },
     findByGatewayId: (req, res) => {
@@ -38,7 +44,12 @@ module.exports = {
     },
     remove: (req, res) => {
         Peripheral.findById(req.params.id, (err, peripheral) => {
-            if(err) res.json({error: err})
+            if(err){
+                res.json({error: err})
+            }else if(!peripheral){
+                res.json({error: "Not found peripheral"})
+            }
+            
             const gatewayId = peripheral.gateway
             const peripheralId = peripheral._id
             

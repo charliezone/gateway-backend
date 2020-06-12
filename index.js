@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 require('dotenv').config()
 
 const app = express()
-// Connect to MongoDB database
+
 mongoose
   .connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {

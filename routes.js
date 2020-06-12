@@ -7,7 +7,8 @@ router.get("/gateways", Gateway.find)
 router.post("/add/gateway", Gateway.create)  
 
 router.get("/peripherals", Peripheral.find)
-router.get("/peripherals/:id", Peripheral.findByGatewayId) 
+router.get("/peripherals/:id", Peripheral.findByGatewayId)
+router.get("/peripheral/:id", Peripheral.findByPeripheralId) 
 router.post("/add/peripheral", Peripheral.create)
 router.delete('/remove/peripheral/:id', Peripheral.remove)
 
