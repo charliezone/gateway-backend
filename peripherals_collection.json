@@ -1,0 +1,157 @@
+[{
+  "_id": {
+    "$oid": "5ee443fe0ffa983c44fdee81"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 1",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee4261c56dd323bdcf12570"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444070ffa983c44fdee82"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 2",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee4261c56dd323bdcf12570"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee4440e0ffa983c44fdee83"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 3",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee4261c56dd323bdcf12570"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee4443a0ffa983c44fdee85"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 4",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee4441e0ffa983c44fdee84"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee4443d0ffa983c44fdee86"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 5",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee4441e0ffa983c44fdee84"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444410ffa983c44fdee87"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 6",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee4441e0ffa983c44fdee84"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444770ffa983c44fdee89"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 7",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee444520ffa983c44fdee88"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444820ffa983c44fdee8a"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 8",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee444520ffa983c44fdee88"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444860ffa983c44fdee8b"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 9",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee444520ffa983c44fdee88"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444a20ffa983c44fdee8d"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 10",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee444900ffa983c44fdee8c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444a80ffa983c44fdee8e"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 11",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee444900ffa983c44fdee8c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ee444ab0ffa983c44fdee8f"
+  },
+  "create_at": {
+    "$date": "2020-06-13T01:06:47.053Z"
+  },
+  "vendor": "Peripheral 12",
+  "status": "Online",
+  "gateway": {
+    "$oid": "5ee444900ffa983c44fdee8c"
+  },
+  "__v": 0
+}]

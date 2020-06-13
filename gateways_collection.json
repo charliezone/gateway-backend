@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5ee4261c56dd323bdcf12570"
+  },
+  "peripheral": [
+    {
+      "$oid": "5ee443fe0ffa983c44fdee81"
+    },
+    {
+      "$oid": "5ee444070ffa983c44fdee82"
+    },
+    {
+      "$oid": "5ee4440e0ffa983c44fdee83"
+    }
+  ],
+  "name": "gateway 1",
+  "ip": "127.0.0.1",
+  "__v": 11
+},{
+  "_id": {
+    "$oid": "5ee4441e0ffa983c44fdee84"
+  },
+  "peripheral": [
+    {
+      "$oid": "5ee4443a0ffa983c44fdee85"
+    },
+    {
+      "$oid": "5ee4443d0ffa983c44fdee86"
+    },
+    {
+      "$oid": "5ee444410ffa983c44fdee87"
+    }
+  ],
+  "name": "gateway 2",
+  "ip": "127.0.0.2",
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "5ee444520ffa983c44fdee88"
+  },
+  "peripheral": [
+    {
+      "$oid": "5ee444770ffa983c44fdee89"
+    },
+    {
+      "$oid": "5ee444820ffa983c44fdee8a"
+    },
+    {
+      "$oid": "5ee444860ffa983c44fdee8b"
+    }
+  ],
+  "name": "gateway 3",
+  "ip": "127.0.0.3",
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "5ee444900ffa983c44fdee8c"
+  },
+  "peripheral": [
+    {
+      "$oid": "5ee444a20ffa983c44fdee8d"
+    },
+    {
+      "$oid": "5ee444a80ffa983c44fdee8e"
+    },
+    {
+      "$oid": "5ee444ab0ffa983c44fdee8f"
+    }
+  ],
+  "name": "gateway 4",
+  "ip": "127.0.0.4",
+  "__v": 3
+}]
