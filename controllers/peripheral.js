@@ -51,14 +51,14 @@ module.exports = {
             }
             
             const gatewayId = peripheral.gateway
-            const peripheralId = peripheral._id
+            const peripheralId = req.params.id
             
             peripheral.remove((err) => {
                 if(err)return res.json({error: err})
 
                 Gateway.findById(gatewayId, (err, gateway) => {
                     if(err)return res.json({error: err})
-                    gateway.peripheral = gateway.peripheral.filter(elem => elem == peripheralId)
+                    gateway.peripheral = gateway.peripheral.filter(elem => elem != peripheralId)
                     gateway.save(err => {
                         if(err)return res.json({error: err})
                         res.json(peripheral)
