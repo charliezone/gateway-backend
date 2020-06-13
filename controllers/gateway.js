@@ -10,19 +10,19 @@ module.exports = {
 
         gateway.save((err, data) => {
             if(err)return res.json({error: err})
-            res.json(data)
+            res.json({success: true, data: data})
         })
     },
     find: (req, res) => {
         Gateway.find((err, data) => {
             if(err)return res.json({error: err})
-            res.json(data)
+            res.json({success: true, data: data})
         })
     },
     findByGatewayId: (req, res) => {
         Gateway.findById(req.params.id, (err, gateway) => {
             if(err)return res.json({error: err})
-            res.json(gateway)
+            res.json({success: true, data: gateway})
         })
     },
     remove: (req, res) => {
@@ -41,7 +41,7 @@ module.exports = {
                 Peripheral.deleteMany({gateway: gatewayId}, err => {
                     if(err)return res.json({error: err})
 
-                    res.json(gateway)
+                    res.json({success: true, data: gateway})
                 })
             })
         })

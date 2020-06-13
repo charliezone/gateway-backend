@@ -18,7 +18,7 @@ module.exports = {
                 gateway.peripheral.push(per._id)
                 gateway.save(err => {
                     if(err) return res.json({error: err})
-                    res.json(per)
+                    res.json({success: true, data: per})
                 })
             })
         })
@@ -26,20 +26,20 @@ module.exports = {
     find: (req, res) => {
         Peripheral.find((err, peripherals) => {
             if(err)return res.json({error: err})
-            res.json(peripherals)
+            res.json({success: true, data: peripherals})
         })
     },
     findByPeripheralId: (req, res) => {
         Peripheral.findById(req.params.id, (err, peripheral) => {
             if(err)return res.json({error: err})
-            res.json(peripheral)
+            res.json({success: true, data: peripheral})
         })
     },
     findByGatewayId: (req, res) => {
         const { id } = req.params
         Peripheral.find({gateway: id}, (err, data) => {
             if(err)return res.json({error: err})
-            res.json(data)
+            res.json({success: true, data: data})
         })
     },
     remove: (req, res) => {
@@ -61,7 +61,7 @@ module.exports = {
                     gateway.peripheral = gateway.peripheral.filter(elem => elem != peripheralId)
                     gateway.save(err => {
                         if(err)return res.json({error: err})
-                        res.json(peripheral)
+                        res.json({success: true, data: peripheral})
                     })
                 })
             })

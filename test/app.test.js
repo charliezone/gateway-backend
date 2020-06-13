@@ -13,8 +13,8 @@ describe("Testing enpoints", () => {
             .send({"name": "gateway 6", "ip": "127.0.0.6"})
             .end((err, res) => {
                 expect(res).to.have.status(200)
-                expect(res.body.name).to.equals("gateway 6")
-                expect(res.body.ip).to.equals("127.0.0.6")
+                expect(res.body.data.name).to.equals("gateway 6")
+                expect(res.body.data.ip).to.equals("127.0.0.6")
                 done()
             })
     })
@@ -37,8 +37,8 @@ describe("Testing enpoints", () => {
             .get('/api/gateways')
             .end((err, res) => {
                 expect(res).to.have.status(200)
-                expect(res.body).to.be.a("array")
-                expect(res.body).to.have.lengthOf.at.least(1)
+                expect(res.body.data).to.be.a("array")
+                expect(res.body.data).to.have.lengthOf.at.least(1)
                 done()
             })
     })
